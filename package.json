@@ -1,0 +1,26 @@
+{
+  "name": "loopback-connector-quickbooks",
+  "version": "0.0.1",
+  "description": "Loopback connector to provide easy RESTful access to QuickBooks Desktop data via QBWebConnector",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "loopback",
+    "connector",
+    "quickbooks",
+    "qbws",
+    "qbwebconnector"
+  ],
+  "author": "NodeGeeks LLC <support@nodegeeksllc.com>",
+  "license": "MIT",
+  "dependencies": {
+    "loopback-connector": "^2.4.0",
+    "loopback-connector-soap": "^2.5.0"
+  }
+}
