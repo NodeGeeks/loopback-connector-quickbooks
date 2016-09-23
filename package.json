@@ -20,12 +20,13 @@
   "author": "NodeGeeks LLC <support@nodegeeksllc.com>",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.1",
     "loopback": "^2.34.1",
     "loopback-connector": "^2.4.0",
     "loopback-connector-soap": "^2.5.0",
     "node-uuid": "^1.4.7",
     "soap": "^0.9.1",
-    "chalk": "^1.1.1",
-    "xmlbuilder": "^2.6.4"
+    "xmlbuilder": "^2.6.4",
+    "xmljson": "^0.2.0"
   }
 }
