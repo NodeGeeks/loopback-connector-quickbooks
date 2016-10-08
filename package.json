@@ -20,6 +20,7 @@
   "author": "NodeGeeks LLC <support@nodegeeksllc.com>",
   "license": "MIT",
   "dependencies": {
+    "bignumber.js": "^2.4.0",
     "chalk": "^1.1.1",
     "loopback": "^2.34.1",
     "loopback-connector": "^2.4.0",
