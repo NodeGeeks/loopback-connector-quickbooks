@@ -9,36 +9,45 @@ server to send and receive XML requests to view, create or update QuickBooks dat
 server built in. The connector itself is responsible intaking a traditional RESTful API request, and using the SOAP 
 service to communicate it to the QuickBooks Web Connector.
 
+## Thank you
 Big thanks to [johnballantyne](https://github.com/johnballantyne?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93). 
 The built in SOAP service is based upon his implementation of [Node.js QBWebConnector service](https://github.com/johnballantyne/qbws) 
 with modifications to support dynamic queries.
+
+## How it Works
+ Once you have installed the connector and added the datasource the rest is magic. Since QuickBooks data is not 
+ `schemaless` the connector is in charge of automatically building all required Loopback Models, meaning right out of 
+ the box once you serve up your API you will have access to `Customers`, `UnitOfMeasureSets`, `Employees` and many more 
+ (full list bellow). Upon serving your API all the data from QuickBooks will be available to query. You can use the 
+ `reSync()` method to ask QuickBooks for updated data.    
 
 ## Install connector from NPM
 
     npm install loopback-connector-quickbooks --save
 
-## Configuring elastic connector
-Edit **datasources.json** and set:
+## Configuring QuickBooks connector
+Edit **datasources.json** and add:
 
-    "quickbooksDataSource" : {
-        "wsdlURL": "http://localhost:2188/wsdl?WSDL",
-        "name": "quickbooksDataSource",
-        "connector": "quickbooks",
-        "companyFile": "C:\\Users\\Public\\Documents\\Intuit\\QuickBooks\\Sample Company Files\\sample business.qbw",
+     "quickbooksService": {
+        "name": "quickbooksService",
+        "connector": "loopback-connector-quickbooks",
         "username": "qbuser",
         "password": "pas***rd1234"
-    }
+        "companyFile": "C:\\Users\\Public\\Documents\\Intuit\\QuickBooks\\Company Files\\NodeGeeks LLC.qbw",
+        "enableServiceLog": true,
+        "config": {
+          "verbosity": 2
+        }
+      }
     
 Settings:
 ---------
-- **wsdlURL:** URL pointing to the wsdl server
+- **name:** The name of the datasource must be `quickbooksService`
 - **username:** Username used in the .QWC file created for your server
 - **password:** Password set in QuickBooks Web Connector
+- **companyFile:** Directory on your local machine where your QuickBooks company file is located
+- **enableServiceLog:** Enabled debug logging, this coupled with the config.verbosity determines how deep logging is enabled  
 
 
 ## TODO
-  * Add method to insure that the only data getting returns is data that is defined within the `model.json properties`
-
-## Release notes
-
-  * Beta v0.01 released
+  * Finish implementing POST(Add) and UPDATE(Mod) operations 
