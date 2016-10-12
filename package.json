@@ -1,6 +1,6 @@
 {
   "name": "loopback-connector-quickbooks",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Loopback connector to provide easy RESTful access to QuickBooks Desktop data via QBWebConnector",
   "main": "index.js",
   "directories": {
