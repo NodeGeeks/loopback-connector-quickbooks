@@ -51,3 +51,4 @@ Settings:
 
 ## TODO
   * Finish implementing POST(Add) and UPDATE(Mod) operations 
+  * Add maxLength[ ], datatype[√], order[√], required[ ] and a custom[ ] validation. `custom` validation should be a function that would return true or false. Each validation should be defined within its appropriate schema (model) file
