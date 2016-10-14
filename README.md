@@ -14,6 +14,11 @@ Big thanks to [johnballantyne](https://github.com/johnballantyne?tab=overview&fr
 The built in SOAP service is based upon his implementation of [Node.js QBWebConnector service](https://github.com/johnballantyne/qbws) 
 with modifications to support dynamic queries.
 
+Another big thanks goes to the creator of the project [quickbooks-php](https://github.com/consolibyte/quickbooks-php), 
+Keith Palmer from ConsoliBYTE, LLC. Without his guidance on an issue i had when implementing the `Mod` and `Add` 
+operations i would have pulled my hair out and OD'd on coffee. The project `quickbooks-php` and their usage of schema 
+files for validation was a key part to this `connector`
+
 ## How it Works
  Once you have installed the connector and added the datasource the rest is magic. Since QuickBooks data is not 
  `schemaless` the connector is in charge of automatically building all required Loopback Models, meaning right out of 
