@@ -15,7 +15,7 @@ The built in SOAP service is based upon his implementation of [Node.js QBWebConn
 with modifications to support dynamic queries.
 
 Another big thanks goes to the creator of the project [quickbooks-php](https://github.com/consolibyte/quickbooks-php), 
-Keith Palmer from ConsoliBYTE, LLC. Without his guidance on an issue i had when implementing the `Mod` and `Add` 
+Keith Palmer from [ConsoliBYTE](https://github.com/consolibyte), LLC. Without his guidance on an issue i had when implementing the `Mod` and `Add` 
 operations i would have pulled my hair out and OD'd on coffee. The project `quickbooks-php` and their usage of schema 
 files for validation was a key part to this `connector`
 
