@@ -1,0 +1,818 @@
+{
+  "modelName": "Estimate",
+  "validOps": [
+    "EstimateAdd",
+    "EstimateQuery",
+    "EstimateMod"
+  ],
+  "Query": {
+  },
+  "Add": {
+    "0": {
+      "CustomerRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "1": {
+      "ClassRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "2": {
+      "TemplateRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "3": {
+      "TxnDate": "DATETYPE"
+    },
+    "4": {
+      "RefNumber": "STRTYPE"
+    },
+    "5": {
+      "BillAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "6": {
+      "ShipAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "7": {
+      "IsActive": "BOOLTYPE"
+    },
+    "8": {
+      "PONumber": "STRTYPE"
+    },
+    "9": {
+      "TermsRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "10": {
+      "DueDate": "DATETYPE"
+    },
+    "11": {
+      "SalesRepRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "12": {
+      "FOB": "STRTYPE"
+    },
+    "13": {
+      "ItemSalesTaxRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "14": {
+      "Memo": "STRTYPE"
+    },
+    "15": {
+      "CustomerMsgRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "16": {
+      "IsToBeEmailed": "BOOLTYPE"
+    },
+    "17": {
+      "CustomerSalesTaxCodeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "18": {
+      "Other": "STRTYPE"
+    },
+    "19": {
+      "ExchangeRate": "FLOATTYPE"
+    },
+    "20": {
+      "ExternalGUID": "GUIDTYPE"
+    },
+    "21": {
+      "EstimateLineAdd": [
+        {
+          "0": {
+            "ItemRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "1": {
+            "Desc": "STRTYPE"
+          },
+          "2": {
+            "Quantity": "QUANTYPE"
+          },
+          "3": {
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "4": {
+            "Rate": "PRICETYPE"
+          },
+          "5": {
+            "RatePercent": "PERCENTTYPE"
+          },
+          "6": {
+            "ClassRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "7": {
+            "Amount": "AMTTYPE"
+          },
+          "8": {
+            "OptionForPriceRuleConflict": "ENUMTYPE"
+          },
+          "9": {
+            "InventorySiteRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "10": {
+            "InventorySiteLocationRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "11": {
+            "SalesTaxCodeRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "12": {
+            "MarkupRate": "PRICETYPE"
+          },
+          "13": {
+            "MarkupRatePercent": "PERCENTTYPE"
+          },
+          "14": {
+            "PriceLevelRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "15": {
+            "OverrideItemAccountRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "16": {
+            "Other1": "STRTYPE"
+          },
+          "17": {
+            "Other2": "STRTYPE"
+          },
+          "18": {
+            "DataExt": {
+              "0": {
+                "OwnerID": "GUIDTYPE"
+              },
+              "1": {
+                "DataExtName": "STRTYPE"
+              },
+              "2": {
+                "DataExtValue": "STRTYPE"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "22": {
+      "EstimateLineGroupAdd": [
+        {
+          "0": {
+            "ItemGroupRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "1": {
+            "Quantity": "QUANTYPE"
+          },
+          "2": {
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "3": {
+            "InventorySiteRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "4": {
+            "InventorySiteLocationRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "5": {
+            "DataExt": {
+              "0": {
+                "OwnerID": "GUIDTYPE"
+              },
+              "1": {
+                "DataExtName": "STRTYPE"
+              },
+              "2": {
+                "DataExtValue": "STRTYPE"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "Mod": {
+    "0": {
+      "TxnID": "IDTYPE"
+    },
+    "1": {
+      "EditSequence": "STRTYPE"
+    },
+    "2": {
+      "CustomerRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "3": {
+      "ClassRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "4": {
+      "TemplateRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "5": {
+      "TxnDate": "DATETYPE"
+    },
+    "6": {
+      "RefNumber": "STRTYPE"
+    },
+    "7": {
+      "BillAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "8": {
+      "ShipAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "9": {
+      "IsActive": "BOOLTYPE"
+    },
+    "10": {
+      "CreateChangeOrder": "BOOLTYPE"
+    },
+    "11": {
+      "PONumber": "STRTYPE"
+    },
+    "12": {
+      "TermsRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "13": {
+      "DueDate": "DATETYPE"
+    },
+    "14": {
+      "SalesRepRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "15": {
+      "FOB": "STRTYPE"
+    },
+    "16": {
+      "ItemSalesTaxRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "17": {
+      "Memo": "STRTYPE"
+    },
+    "18": {
+      "CustomerMsgRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "19": {
+      "IsToBeEmailed": "BOOLTYPE"
+    },
+    "20": {
+      "CustomerSalesTaxCodeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "21": {
+      "Other": "STRTYPE"
+    },
+    "22": {
+      "ExchangeRate": "FLOATTYPE"
+    },
+    "23": {
+      "EstimateLineMod": [
+        {
+          "0": {
+            "TxnLineID": "IDTYPE"
+          },
+          "1": {
+            "ItemRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "2": {
+            "Desc": "STRTYPE"
+          },
+          "3": {
+            "Quantity": "QUANTYPE"
+          },
+          "4": {
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "5": {
+            "OverrideUOMSetRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "6": {
+            "Rate": "PRICETYPE"
+          },
+          "7": {
+            "RatePercent": "PERCENTTYPE"
+          },
+          "8": {
+            "ClassRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "9": {
+            "Amount": "AMTTYPE"
+          },
+          "10": {
+            "OptionForPriceRuleConflict": "ENUMTYPE"
+          },
+          "11": {
+            "InventorySiteRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "12": {
+            "InventorySiteLocationRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "13": {
+            "SalesTaxCodeRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "14": {
+            "MarkupRate": "PRICETYPE"
+          },
+          "15": {
+            "MarkupRatePercent": "PERCENTTYPE"
+          },
+          "16": {
+            "PriceLevelRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "17": {
+            "Other1": "STRTYPE"
+          },
+          "18": {
+            "Other2": "STRTYPE"
+          }
+        }
+      ]
+    },
+    "24": {
+      "EstimateLineGroupMod": [
+        {
+          "0": {
+            "TxnLineID": "IDTYPE"
+          },
+          "1": {
+            "ItemGroupRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "2": {
+            "Quantity": "QUANTYPE"
+          },
+          "3": {
+            "UnitOfMeasure": "STRTYPE"
+          },
+          "4": {
+            "OverrideUOMSetRef": {
+              "0": {
+                "ListID": "IDTYPE"
+              },
+              "1": {
+                "FullName": "STRTYPE"
+              }
+            }
+          },
+          "5": {
+            "EstimateLineMod": [
+              {
+                "0": {
+                  "TxnLineID": "IDTYPE"
+                },
+                "1": {
+                  "ItemRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "2": {
+                  "Desc": "STRTYPE"
+                },
+                "3": {
+                  "Quantity": "QUANTYPE"
+                },
+                "4": {
+                  "UnitOfMeasure": "STRTYPE"
+                },
+                "5": {
+                  "OverrideUOMSetRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "6": {
+                  "Rate": "PRICETYPE"
+                },
+                "7": {
+                  "RatePercent": "PERCENTTYPE"
+                },
+                "8": {
+                  "ClassRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "9": {
+                  "Amount": "AMTTYPE"
+                },
+                "10": {
+                  "OptionForPriceRuleConflict": "ENUMTYPE"
+                },
+                "11": {
+                  "InventorySiteRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "12": {
+                  "InventorySiteLocationRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "13": {
+                  "SalesTaxCodeRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "14": {
+                  "MarkupRate": "PRICETYPE"
+                },
+                "15": {
+                  "MarkupRatePercent": "PERCENTTYPE"
+                },
+                "16": {
+                  "PriceLevelRef": {
+                    "0": {
+                      "ListID": "IDTYPE"
+                    },
+                    "1": {
+                      "FullName": "STRTYPE"
+                    }
+                  }
+                },
+                "17": {
+                  "Other1": "STRTYPE"
+                },
+                "18": {
+                  "Other2": "STRTYPE"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

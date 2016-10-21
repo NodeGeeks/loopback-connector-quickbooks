@@ -1,0 +1,759 @@
+{
+  "modelName": "Customer",
+  "validOps": [
+    "CustomerQuery",
+    "CustomerAdd",
+    "CustomerMod"
+  ],
+  "Add": {
+    "0": {
+      "Name": "STRTYPE",
+      "required": true
+    },
+    "1": {
+      "IsActive": "BOOLTYPE"
+    },
+    "2": {
+      "ClassRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "3": {
+      "ParentRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "4": {
+      "CompanyName": "STRTYPE"
+    },
+    "5": {
+      "Salutation": "STRTYPE"
+    },
+    "6": {
+      "FirstName": "STRTYPE"
+    },
+    "7": {
+      "MiddleName": "STRTYPE"
+    },
+    "8": {
+      "LastName": "STRTYPE"
+    },
+    "9": {
+      "JobTitle": "STRTYPE"
+    },
+    "10": {
+      "BillAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "11": {
+      "ShipAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "12": {
+      "ShipToAddress": {
+        "0": {
+          "Name": "STRTYPE"
+        },
+        "1": {
+          "Addr1": "STRTYPE"
+        },
+        "2": {
+          "Addr2": "STRTYPE"
+        },
+        "3": {
+          "Addr3": "STRTYPE"
+        },
+        "4": {
+          "Addr4": "STRTYPE"
+        },
+        "5": {
+          "Addr5": "STRTYPE"
+        },
+        "6": {
+          "City": "STRTYPE"
+        },
+        "7": {
+          "State": "STRTYPE"
+        },
+        "8": {
+          "PostalCode": "STRTYPE"
+        },
+        "9": {
+          "Country": "STRTYPE"
+        },
+        "10": {
+          "Note": "STRTYPE"
+        },
+        "11": {
+          "DefaultShipTo": "BOOLTYPE"
+        }
+      }
+    },
+    "13": {
+      "Phone": "STRTYPE"
+    },
+    "14": {
+      "AltPhone": "STRTYPE"
+    },
+    "15": {
+      "Fax": "STRTYPE"
+    },
+    "16": {
+      "Email": "STRTYPE"
+    },
+    "17": {
+      "Cc": "STRTYPE"
+    },
+    "18": {
+      "Contact": "STRTYPE"
+    },
+    "19": {
+      "AltContact": "STRTYPE"
+    },
+    "20": {
+      "AdditionalContactRef": {
+        "0": {
+          "ContactName": "STRTYPE"
+        },
+        "1": {
+          "ContactValue": "STRTYPE"
+        }
+      }
+    },
+    "21": {
+      "Contacts": {
+        "0": {
+          "Salutation": "STRTYPE"
+        },
+        "1": {
+          "FirstName": "STRTYPE"
+        },
+        "2": {
+          "MiddleName": "STRTYPE"
+        },
+        "3": {
+          "LastName": "STRTYPE"
+        },
+        "4": {
+          "JobTitle": "STRTYPE"
+        },
+        "5": {
+          "AdditionalContactRef": {
+            "0": {
+              "ContactName": "STRTYPE"
+            },
+            "1": {
+              "ContactValue": "STRTYPE"
+            }
+          }
+        }
+      }
+    },
+    "22": {
+      "CustomerTypeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "23": {
+      "TermsRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "24": {
+      "SalesRepRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "25": {
+      "OpenBalance": "AMTTYPE"
+    },
+    "26": {
+      "OpenBalanceDate": "DATETYPE"
+    },
+    "27": {
+      "SalesTaxCodeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "28": {
+      "ItemSalesTaxRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "29": {
+      "ResaleNumber": "STRTYPE"
+    },
+    "30": {
+      "AccountNumber": "STRTYPE"
+    },
+    "31": {
+      "CreditLimit": "AMTTYPE"
+    },
+    "32": {
+      "PreferredPaymentMethodRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "33": {
+      "CreditCardInfo": {
+        "0": {
+          "CreditCardNumber": "STRTYPE"
+        },
+        "1": {
+          "ExpirationMonth": "INTTYPE"
+        },
+        "2": {
+          "ExpirationYear": "INTTYPE"
+        },
+        "3": {
+          "NameOnCard": "STRTYPE"
+        },
+        "4": {
+          "CreditCardAddress": "STRTYPE"
+        },
+        "5": {
+          "CreditCardPostalCode": "STRTYPE"
+        }
+      }
+    },
+    "34": {
+      "JobStatus": "ENUMTYPE"
+    },
+    "35": {
+      "JobStartDate": "DATETYPE"
+    },
+    "36": {
+      "JobProjectedEndDate": "DATETYPE"
+    },
+    "37": {
+      "JobEndDate": "DATETYPE"
+    },
+    "38": {
+      "JobDesc": "STRTYPE"
+    },
+    "39": {
+      "JobTypeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "40": {
+      "Notes": "STRTYPE"
+    },
+    "41": {
+      "AdditionalNotes": {
+        "0": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "42": {
+      "PreferredDeliveryMethod": "ENUMTYPE"
+    },
+    "43": {
+      "PriceLevelRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "44": {
+      "ExternalGUID": "GUIDTYPE"
+    },
+    "45": {
+      "CurrencyRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    }
+  },
+  "Mod": {
+    "0": {
+      "ListID": "IDTYPE"
+    },
+    "1": {
+      "EditSequence": "STRTYPE"
+    },
+    "2": {
+      "Name": "STRTYPE"
+    },
+    "3": {
+      "IsActive": "BOOLTYPE"
+    },
+    "4": {
+      "ClassRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "5": {
+      "ParentRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "6": {
+      "CompanyName": "STRTYPE"
+    },
+    "7": {
+      "Salutation": "STRTYPE"
+    },
+    "8": {
+      "FirstName": "STRTYPE"
+    },
+    "9": {
+      "MiddleName": "STRTYPE"
+    },
+    "10": {
+      "LastName": "STRTYPE"
+    },
+    "11": {
+      "JobTitle": "STRTYPE"
+    },
+    "12": {
+      "BillAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "13": {
+      "ShipAddress": {
+        "0": {
+          "Addr1": "STRTYPE"
+        },
+        "1": {
+          "Addr2": "STRTYPE"
+        },
+        "2": {
+          "Addr3": "STRTYPE"
+        },
+        "3": {
+          "Addr4": "STRTYPE"
+        },
+        "4": {
+          "Addr5": "STRTYPE"
+        },
+        "5": {
+          "City": "STRTYPE"
+        },
+        "6": {
+          "State": "STRTYPE"
+        },
+        "7": {
+          "PostalCode": "STRTYPE"
+        },
+        "8": {
+          "Country": "STRTYPE"
+        },
+        "9": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "14": {
+      "ShipToAddress": {
+        "0": {
+          "Name": "STRTYPE"
+        },
+        "1": {
+          "Addr1": "STRTYPE"
+        },
+        "2": {
+          "Addr2": "STRTYPE"
+        },
+        "3": {
+          "Addr3": "STRTYPE"
+        },
+        "4": {
+          "Addr4": "STRTYPE"
+        },
+        "5": {
+          "Addr5": "STRTYPE"
+        },
+        "6": {
+          "City": "STRTYPE"
+        },
+        "7": {
+          "State": "STRTYPE"
+        },
+        "8": {
+          "PostalCode": "STRTYPE"
+        },
+        "9": {
+          "Country": "STRTYPE"
+        },
+        "10": {
+          "Note": "STRTYPE"
+        },
+        "11": {
+          "DefaultShipTo": "BOOLTYPE"
+        }
+      }
+    },
+    "15": {
+      "Phone": "STRTYPE"
+    },
+    "16": {
+      "AltPhone": "STRTYPE"
+    },
+    "17": {
+      "Fax": "STRTYPE"
+    },
+    "18": {
+      "Email": "STRTYPE"
+    },
+    "19": {
+      "Cc": "STRTYPE"
+    },
+    "20": {
+      "Contact": "STRTYPE"
+    },
+    "21": {
+      "AltContact": "STRTYPE"
+    },
+    "22": {
+      "AdditionalContactRef": {
+        "0": {
+          "ContactName": "STRTYPE"
+        },
+        "1": {
+          "ContactValue": "STRTYPE"
+        }
+      }
+    },
+    "23": {
+      "ContactsMod": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "EditSequence": "STRTYPE"
+        },
+        "2": {
+          "Salutation": "STRTYPE"
+        },
+        "3": {
+          "FirstName": "STRTYPE"
+        },
+        "4": {
+          "MiddleName": "STRTYPE"
+        },
+        "5": {
+          "LastName": "STRTYPE"
+        },
+        "6": {
+          "JobTitle": "STRTYPE"
+        },
+        "7": {
+          "AdditionalContactRef": {
+            "0": {
+              "ContactName": "STRTYPE"
+            },
+            "1": {
+              "ContactValue": "STRTYPE"
+            }
+          }
+        }
+      }
+    },
+    "24": {
+      "CustomerTypeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "25": {
+      "TermsRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "26": {
+      "SalesRepRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "27": {
+      "SalesTaxCodeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "28": {
+      "ItemSalesTaxRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "29": {
+      "ResaleNumber": "STRTYPE"
+    },
+    "30": {
+      "AccountNumber": "STRTYPE"
+    },
+    "31": {
+      "CreditLimit": "AMTTYPE"
+    },
+    "32": {
+      "PreferredPaymentMethodRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "33": {
+      "CreditCardInfo": {
+        "0": {
+          "CreditCardNumber": "STRTYPE"
+        },
+        "1": {
+          "ExpirationMonth": "INTTYPE"
+        },
+        "2": {
+          "ExpirationYear": "INTTYPE"
+        },
+        "3": {
+          "NameOnCard": "STRTYPE"
+        },
+        "4": {
+          "CreditCardAddress": "STRTYPE"
+        },
+        "5": {
+          "CreditCardPostalCode": "STRTYPE"
+        }
+      }
+    },
+    "34": {
+      "JobStatus": "ENUMTYPE"
+    },
+    "35": {
+      "JobStartDate": "DATETYPE"
+    },
+    "36": {
+      "JobProjectedEndDate": "DATETYPE"
+    },
+    "37": {
+      "JobEndDate": "DATETYPE"
+    },
+    "38": {
+      "JobDesc": "STRTYPE"
+    },
+    "39": {
+      "JobTypeRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "40": {
+      "Notes": "STRTYPE"
+    },
+    "41": {
+      "AdditionalNotesMod": {
+        "0": {
+          "NoteID": "INTTYPE"
+        },
+        "1": {
+          "Note": "STRTYPE"
+        }
+      }
+    },
+    "42": {
+      "PreferredDeliveryMethod": "ENUMTYPE"
+    },
+    "43": {
+      "PriceLevelRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    },
+    "44": {
+      "CurrencyRef": {
+        "0": {
+          "ListID": "IDTYPE"
+        },
+        "1": {
+          "FullName": "STRTYPE"
+        }
+      }
+    }
+  }
+}
