@@ -17,7 +17,7 @@
     "qbws",
     "qbwebconnector"
   ],
-  "repository": "https://github.com/TeknoloGenie/loopback-connector-quickbooks.git",
+  "repository": "https://github.com/NodeGeeks/loopback-connector-quickbooks.git",
   "author": "NodeGeeks LLC <support@nodegeeksllc.com>",
   "license": "MIT",
   "dependencies": {
