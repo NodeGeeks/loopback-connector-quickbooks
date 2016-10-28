@@ -55,5 +55,15 @@ Settings:
 
 
 ## TODO
-  * Finish implementing POST(Add) and UPDATE(Mod) operations 
-  * Add maxLength[ ], datatype[√], order[√], required[ ] and a custom[ ] validation. `custom` validation should be a function that would return true or false. Each validation should be defined within its appropriate schema (model) file
+  
+- [ ] Create tests for all 3 request ops (Query, Mod, Add) using `Customer` (QB List object) and `Estimate` (QB Transaction object). A complete test of every QuickBooks Object and Operations for those Objects should eventually be created.
+- [ ] Cleanup code and add comments throughout the project to better document the code. 
+- [ ] Add dual QuickBooks API support, currently only Desktop is supported, the QB Online API should also be added.
+- [ ] Currently the `Employee` Object extends `User` to allow for Employee login via Loopbacks User Model, a couple of things should be done when creating the Model, first ACL policies must be implemented, and second we need to automate the process in which they choose a password for there Employee record, thus also automating determining what permissions/roles that Employee may or may not have.
+- [ ] Refactor `QBWebService.reSync` to support to determine if each index value in `models`  param is a string for a simple query or if it is an object with a `filter` property that defines a more advanced query.
+
+Because this is a `Loopback Connector` this project is to conform the coding style, commit message and terminology guidelines provided by `Loopback`
+- [ ] Refactor to inherit [Loopbacks Coding Style](http://loopback.io/doc/en/contrib/style-guide.html) guidelines
+- [ ] Create `CONTRIBUTING.md` file to set contributing guidelines and agreement
+
+new todo's will be added periodically and until this is closed and this `loopback-connector` is marked `ready for production`.
