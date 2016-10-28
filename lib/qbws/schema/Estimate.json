@@ -62,18 +62,6 @@
           "Addr5": "STRTYPE"
         },
         "5": {
-          "City": "STRTYPE"
-        },
-        "6": {
-          "State": "STRTYPE"
-        },
-        "7": {
-          "PostalCode": "STRTYPE"
-        },
-        "8": {
-          "Country": "STRTYPE"
-        },
-        "9": {
           "Note": "STRTYPE"
         }
       }
@@ -96,18 +84,6 @@
           "Addr5": "STRTYPE"
         },
         "5": {
-          "City": "STRTYPE"
-        },
-        "6": {
-          "State": "STRTYPE"
-        },
-        "7": {
-          "PostalCode": "STRTYPE"
-        },
-        "8": {
-          "Country": "STRTYPE"
-        },
-        "9": {
           "Note": "STRTYPE"
         }
       }
@@ -428,18 +404,6 @@
           "Addr5": "STRTYPE"
         },
         "5": {
-          "City": "STRTYPE"
-        },
-        "6": {
-          "State": "STRTYPE"
-        },
-        "7": {
-          "PostalCode": "STRTYPE"
-        },
-        "8": {
-          "Country": "STRTYPE"
-        },
-        "9": {
           "Note": "STRTYPE"
         }
       }
@@ -462,18 +426,6 @@
           "Addr5": "STRTYPE"
         },
         "5": {
-          "City": "STRTYPE"
-        },
-        "6": {
-          "State": "STRTYPE"
-        },
-        "7": {
-          "PostalCode": "STRTYPE"
-        },
-        "8": {
-          "Country": "STRTYPE"
-        },
-        "9": {
           "Note": "STRTYPE"
         }
       }
