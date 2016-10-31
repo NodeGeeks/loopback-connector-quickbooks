@@ -21,7 +21,7 @@
   "author": "NodeGeeks LLC <support@nodegeeksllc.com>",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^0.8.7",
+    "bcrypt-nodejs": "0.0.3",
     "bignumber.js": "^2.4.0",
     "chalk": "^1.1.1",
     "loopback": "^2.34.1",
