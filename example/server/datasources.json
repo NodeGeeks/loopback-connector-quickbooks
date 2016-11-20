@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "quickbooksService": {
+    "username": "QBUser",
+    "password": "QBPass",
+    "name": "quickbooksService",
+    "connector": "loopback-connector-quickbooks",
+    "companyFile": "C:\\Users\\Public\\Documents\\Intuit\\QuickBooks\\Company Files\\Company File.qbw",
+    "enableServiceLog": true,
+    "config": {
+      "verbosity": 2
+    }
+  }
+}
