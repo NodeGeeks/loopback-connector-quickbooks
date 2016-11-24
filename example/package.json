@@ -15,6 +15,7 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-explorer": "^2.4.0",
     "loopback-connector-quickbooks": "^0.4.3",
+    "loopback-context": "^1.0.0",
     "loopback-datasource-juggler": "^2.39.0",
     "mocha": "^3.0.2",
     "serve-favicon": "^2.0.1",
